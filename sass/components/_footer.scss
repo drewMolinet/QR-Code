@@ -1,0 +1,44 @@
+@use "../abstracts/" as *;
+
+$footer-padding: 1rem;
+$footer-font-size: 1.1rem;
+$footer-background-color: linear-gradient(
+	hsl(198, 70%, 50%),
+	hsl(198, 70%, 60%)
+);
+$footer-font-style: italic;
+
+$footer-text-color: hsl(210, 70%, 89%);
+
+$footer-link-color: lighten($footer-text-color, 8%);
+$footer-link-color-emphasis: hsl(217, 95%, 45%);
+$footer-link-font-size: 1.2em;
+$footer-link-font-style: normal;
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	inset-inline: 0;
+	text-align: center;
+	padding: $footer-padding;
+
+	background: $footer-background-color;
+	color: $footer-text-color;
+	font-size: $footer-font-size;
+	font-style: $footer-font-style;
+
+	a {
+		color: $footer-link-color;
+		font-size: $footer-link-font-size;
+		font-style: $footer-link-font-style;
+
+		&:is(:hover, :focus) {
+			outline: none;
+			border-bottom: 2px solid currentColor;
+		}
+
+		&:last-child {
+			color: $footer-link-color-emphasis;
+		}
+	}
+}

@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+.heading-1 {
+	color: $heading-color;
+	font-size: $heading-font-size;
+	font-weight: $heading-font-weight;
+}

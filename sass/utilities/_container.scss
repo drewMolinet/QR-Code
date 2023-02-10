@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.container {
+	max-width: calc(
+		min(100%, $container-max-width) - $content-min-margin-inline * 2
+	);
+	margin-inline: auto;
+}

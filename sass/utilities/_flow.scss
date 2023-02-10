@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.flow {
+	& > * {
+		// var --flow-spacer can be defined inline for specific cases
+		margin-bottom: var(--flow-spacer, $flow-spacer);
+	}
+}
